@@ -1,23 +1,42 @@
 <?php if( ! is_front_page() ): ?>
-    <?php endif; ?>
-<footer>
-    <div id="footer">
-        <div class="company">
-            <div class="footer-text">
-                <p>運営会社</p>
             </div>
-            <div class="footer-img">
-                <a href="https://mugennnohajimari.co.jp/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/company_logo.png" class="logo" alt="株式会社無限の始まり" /></a>
-            </div>   
-        </div>
-        <div class="copy">
-            <p>©️無限の始まり.</p>
-        </div>
+          </div>
+        </main>
+      </div>
     </div>
-</footer>
-</div><!-- /.container -->
-    <?php wp_footer(); ?>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+<?php endif; ?>
+    <footer class="footer" id="footer">
+      <div class="footerContents">
+        <div class="footerContents-contact">
+          <div class="enterprise-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
+          </div>
+          <div class="enterprise-detail">
+            <p class="name">パシフィックモール開発株式会社</p>
+            <p class="address">
+              東京都千代田区大手町0-1-2<br />
+              パシフィックモールビルディング18F 
+            </p>
+          </div>
+        </div>
+        <div class="footerContents-sitemap">
+          <nav class="footer-nav">
+<?php
+wp_nav_menu(
+    array (
+        'theme_location' => 'place_footer',
+        'container' => false,
+    )
+);
+?>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright">
+        <small class="copyright-text">&#169; 2019 PACIFIC MALL DEVELOPMENT CO.,LTD.</small>
+      </p>
+    </footer>
+  </div><!-- /.container -->
+<?php wp_footer(); ?>
 </body>
 </html>
