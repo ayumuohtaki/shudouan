@@ -1,0 +1,989 @@
+@charset 'UTF-8';
+/* --------------------------------
+ * 共通アイテム
+ * -------------------------------- */
+ .contents-title-en {
+    padding: 18vh 0 0.5vh;
+    margin-top: 5vh;
+    color: white;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 8vw;
+    text-shadow: -2px -3px 3px $blue;
+    letter-spacing: 0.1em;
+}
+.contents-title-jp {
+    margin-bottom: 8vh;
+    color: $blue;
+    font-family: "Note Sans JP";
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+}
+#blog {
+    .contents-title-jp {
+        margin-top: 1vh;
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * 共通アイテム　smart phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    .contents-title-en {
+        padding: 5vh 0 0.5vh;
+        margin-top: 5vh;
+        color: white;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 15vw;
+        text-shadow: -2px -3px 3px $blue;
+        letter-spacing: 0.1em;
+    }
+    .contents-title-jp {
+        margin-bottom: 8vh;
+        color: $blue;
+        font-family: "Note Sans JP";
+        text-align: center;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * 共通アイテム　ipad
+ * -------------------------------- */
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    .contents-title-en {
+        padding: 5vh 0 0.5vh;
+        margin-top: 5vh;
+        color: white;
+        font-family: "Arial";
+        text-align: center;
+        font-size: 12vw;
+        text-shadow: -2px -3px 3px $blue;
+        letter-spacing: 0.1em;
+    }
+    .contents-title-jp {
+        margin-bottom: 8vh;
+        color: $blue;
+        font-family: "Note Sans JP";
+        text-align: center;
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * job
+ * -------------------------------- */
+.job {
+    width: 100%;
+    padding: 0 10vw;
+    background-color: white;
+    box-sizing: border-box;
+    .job-contents {
+        width: 100%;
+        height: 100%;
+        padding: 1vh 1vw;
+        box-sizing: border-box;
+        .job-item {
+            z-index: 150;
+            flex: auto;
+            width: 100%;
+            height: 100vh;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            border: 1px solid gray;
+            border-radius: 50px;
+            box-shadow: 10px 5px 5px gray;
+            background-color: white;
+            overflow: scroll;
+            margin-bottom: 4vh;
+        }
+        img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+        h3 {
+            padding: 5vh 0;
+            text-align: center;
+            color: $text;
+            font-size: 1.5vw;
+            font-weight: bold;
+            text-shadow: -2px -3px 3px lightgrey;
+        }
+        p {
+            margin: 1vh 0; 
+            color: $text;
+            font-size: 1.1vw;
+            text-align: center;
+            letter-spacing: 0.25em;
+            line-height: 1.5;
+            margin: 1vh 0; 
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * job smrat phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    .job {
+        width: 100%;
+        padding: 0 1vw;
+        background-color: white;
+        box-sizing: border-box;
+        .job-contents {
+            width: 100%;
+            height: 100%;
+            padding: 1vh 1vw;
+            box-sizing: border-box;
+            .job-item {
+                z-index: 150;
+                flex: auto;
+                width: 100%;
+                height: 70vh;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                border: 1px solid gray;
+                border-radius: 50px;
+                box-shadow: 10px 5px 5px gray;
+                background-color: white;
+                overflow: scroll;
+                margin-bottom: 4vh;
+            }
+            img {
+                width: 100%;
+                height: 20vh;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+            h3 {
+                padding: 3vh 0 2vh;
+                text-align: center;
+                color: $text;
+                font-size: 4.5vw;
+                font-weight: bold;
+                text-shadow: -1px -1px 2px lightgrey;
+            }
+            p {
+                margin: 0 0 1vh; 
+                color: $text;
+                font-size: 3vw;
+                text-align: center;
+                letter-spacing: 0.25em;
+                line-height: 1.5;
+                margin: 1vh 0; 
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * job ipad
+ * -------------------------------- */ 
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    .job {
+        width: 100%;
+        padding: 0 1vw;
+        background-color: white;
+        box-sizing: border-box;
+        .job-contents {
+            width: 100%;
+            height: 100%;
+            padding: 1vh 1vw;
+            box-sizing: border-box;
+            .job-item {
+                z-index: 150;
+                flex: auto;
+                width: 100%;
+                height: 90vh;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                border: 1px solid gray;
+                border-radius: 50px;
+                box-shadow: 10px 5px 5px gray;
+                background-color: white;
+                overflow: scroll;
+                margin-bottom: 4vh;
+            }
+            img {
+                width: 100%;
+                height: 20vh;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+            h3 {
+                padding: 3vh 0 2vh;
+                text-align: center;
+                color: $text;
+                font-size: 4.5vw;
+                font-weight: bold;
+                text-shadow: -1px -1px 2px lightgrey;
+            }
+            p {
+                margin: 0 0 1vh; 
+                color: $text;
+                font-size: 3vw;
+                text-align: center;
+                letter-spacing: 0.25em;
+                line-height: 1.5;
+                margin: 1vh 0; 
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * feature
+ * -------------------------------- */
+ .feature {
+    width: 100%;
+    max-width: 80vw;
+    padding: 0 1vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .feature-item {
+        padding:  2vh 0;
+        .feature-title {
+            display: flex;
+            text-align: left;
+            align-items: center;
+            h5 {
+                padding: 3vh 0;
+                margin: 0 auto;
+                color: $text;
+                text-align: center;
+                font-size: 2.2vw;
+                letter-spacing: 0.5vw;
+                line-height: 1.5;
+            }
+            span {
+                position: relative;
+                display: inline-block;
+                height:20px;
+                width:20px;
+                border-radius:50%;
+                line-height:20px;
+                text-align:center;
+                background-color: $blue;
+                font-size: 25px;
+                color: white;
+                padding: 20px;
+                margin-left: 5vw;
+                font-family: Arial;
+                box-shadow: 5px 2.5px 2.5px gray;
+                font-weight: lighter;
+            }
+        }
+        .feature-text {
+            width: 100%;
+            display: flex;
+            padding: 4vh 0;
+            margin-bottom: 3vh;
+            align-items: center;
+            border-bottom: 1px solid lightgrey;
+            p {
+                width: 100%;
+                padding: 1vh 0 0 7vw;
+                margin-top: 1vh;
+                color: $text;
+                line-height: 1.5;
+                font-size: 1.6vw;
+            }
+            img {
+                width: 30vw;
+                height: 30vh;
+                object-fit: cover;
+                box-sizing: border-box;
+                padding: 1vh 1vw;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * feature smart phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    .feature {
+        width: 100%;
+        max-width: 90vw;
+        padding: 0 1vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+        .feature-item {
+            padding:  0 0 3vh;
+            .feature-title {
+                display: flex;
+                text-align: left;
+                align-items: center;
+                margin-bottom: 1vh;
+                h5 {
+                    padding: 0;
+                    color: $text;
+                    text-align: center;
+                    font-size: 3vw;
+                }
+                span {
+                    position: relative;
+                    display: inline-block;
+                    height:12px;
+                    width:12px;
+                    border-radius:50%;
+                    line-height:12px;
+                    text-align:center;
+                    background-color: $blue;
+                    font-size: 12px;
+                    color: white;
+                    padding: 12px;
+                    margin-left: 5vw;
+                    font-family: Arial;
+                    box-shadow: 5px 2.5px 2.5px gray;
+                    font-weight: lighter;
+                }
+            }
+            .feature-text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 1vh 0;
+                margin-bottom: 0;
+                align-items: center;
+                border-bottom: 1px solid lightgrey;
+                img {
+                    display: none;
+                }
+                p {
+                    width: 100%;
+                    padding: 0.5vh 0;
+                    margin: 0;
+                    color: $text;
+                    text-align: left;
+                    line-height: 1.5;
+                    font-size: 3vw;
+                    
+                }
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * feature ipad
+ * -------------------------------- */ 
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    .feature {
+        width: 100%;
+        max-width: 90vw;
+        padding: 0 1vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+        .feature-item {
+            padding:  0 0 3vh;
+            .feature-title {
+                display: flex;
+                text-align: left;
+                align-items: center;
+                margin-bottom: 1vh;
+                h5 {
+                    padding: 0;
+                    color: $text;
+                    text-align: center;
+                    font-size: 3vw;
+                }
+                span {
+                    position: relative;
+                    display: inline-block;
+                    height:12px;
+                    width:12px;
+                    border-radius:50%;
+                    line-height:12px;
+                    text-align:center;
+                    background-color: $blue;
+                    font-size: 12px;
+                    color: white;
+                    padding: 12px;
+                    margin-left: 5vw;
+                    font-family: Arial;
+                    box-shadow: 5px 2.5px 2.5px gray;
+                    font-weight: lighter;
+                }
+            }
+            .feature-text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 1vh 0;
+                margin-bottom: 0;
+                align-items: center;
+                border-bottom: 1px solid lightgrey;
+                img {
+                    display: none;
+                }
+                p {
+                    width: 100%;
+                    padding: 0.5vh 0;
+                    margin: 0;
+                    color: $text;
+                    text-align: left;
+                    line-height: 1.5;
+                    font-size: 3vw;
+                    
+                }
+            }
+        }
+    }
+}
+/*--------------------------------*/
+/* --------------------------------
+ * flow
+ * -------------------------------- */
+#flow {
+    .flow-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 10vw;
+        box-sizing: border-box;
+        justify-content: space-between;
+        text-align: center;
+        .flow-item {
+            width: 100%;
+            .step {
+                font-size: 3vw;
+                color: $blue;
+                font-family: "Helvetica Neue";
+                font-weight: bold;
+                text-shadow: -2px -3px 3px whitesmoke;
+                text-align: center;
+            }
+            .flow-logo {
+                display: flex;
+                flex-direction: column;
+                height: 10vh;
+                padding: 2vh 0;
+                align-content: center;
+                flex-wrap: wrap;
+                p {
+                    display: block;
+                    font-size: 1vw;
+                    font-family: "Helvetica Neue";
+                }
+                
+                img {
+                    width: 5vw;
+                    box-sizing: border-box;
+                }
+            }
+            h3 {
+                margin-bottom: 2vh;
+                color: $text;
+                font-family: "Arial";
+                font-size: 1.5vw; 
+                text-align: center;
+            }
+            .flow-text {
+                color: $text;
+                font-size: 1.3vw;
+                text-align: center;
+                line-height: 1.3;
+                font-family: "Arial, Helvetica, sans-serif";
+            }
+        }
+        .flow-arrow {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            width: 15%;
+            img {
+            position: absolute;
+            width: 100%;
+            top: 35%;
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * flow smart phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    #flow {
+        max-width: 90vw;
+        margin: 0 auto;
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 0 10vw;
+            box-sizing: border-box;
+            justify-content: space-between;
+            text-align: center;
+            .flow-item {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5vh;
+                .step {
+                    font-size: 8vw;
+                    color: $blue;
+                    font-family: "Helvetica Neue";
+                    font-weight: bold;
+                    text-shadow: -2px -3px 3px whitesmoke;
+                    text-align: center;
+                }
+                .flow-logo {
+                    display: flex;
+                    flex-direction: column;
+                    height: 10vh;
+                    padding: 2vh 0;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    p {
+                        display: block;
+                        font-size: 1vw;
+                        font-family: "Helvetica Neue";
+                    }
+                    
+                    img {
+                        width: 20%;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                }
+                h3 {
+                    margin-bottom: 1vh;
+                    color: $text;
+                    font-family: "Arial";
+                    font-size: 5vw; 
+                    text-align: center;
+                }
+                .flow-text {
+                    color: $text;
+                    font-size: 4vw;
+                    text-align: center;
+                    line-height: 1.3;
+                    font-family: "Arial, Helvetica, sans-serif";
+                }
+            }
+            .flow-arrow {
+                display: none;
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * feature ipad
+ * -------------------------------- */ 
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    #flow {
+        max-width: 90vw;
+        margin: 0 auto;
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 0 10vw;
+            box-sizing: border-box;
+            justify-content: space-between;
+            text-align: center;
+            .flow-item {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5vh;
+                .step {
+                    font-size: 7vw;
+                    color: $blue;
+                    font-family: "Helvetica Neue";
+                    font-weight: bold;
+                    text-shadow: -2px -3px 3px whitesmoke;
+                    text-align: center;
+                }
+                .flow-logo {
+                    display: flex;
+                    flex-direction: column;
+                    height: 10vh;
+                    padding: 2vh 0;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    p {
+                        display: block;
+                        font-size: 3vw;
+                        font-family: "Helvetica Neue";
+                    }
+                    
+                    img {
+                        width: 20%;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                }
+                h3 {
+                    margin-bottom: 1vh;
+                    color: $text;
+                    font-family: "Arial";
+                    font-size: 4.5vw; 
+                    text-align: center;
+                }
+                .flow-text {
+                    color: $text;
+                    font-size: 3vw;
+                    text-align: center;
+                    line-height: 1.3;
+                    font-family: "Arial, Helvetica, sans-serif";
+                }
+            }
+            .flow-arrow {
+                display: none;
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * mission
+ * -------------------------------- */
+#mission {
+    margin-bottom: 10vh;
+    .text-container {
+        display: block;
+        width: 80vw;
+        padding: 2vh 2vw;
+        margin: 0 auto;
+        text-align: center;
+        .mission-text {
+            display: inline-block;
+            margin-left: 2vw;
+            color: $text;
+            text-shadow: 2px 3px 3px gray;
+            font-size: 3vw;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.25em;
+            font-family: "Note Sans JP";
+            text-align: left;
+            .mission-text-2 {
+                margin: 3vh 0;
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * mission smart phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    #mission {
+        margin-bottom: 5vh;
+        .text-container {
+            display: block;
+            width: 80vw;
+            padding: 2vh 2vw;
+            margin: 0 auto;
+            text-align: center;
+            .mission-text {
+                display: inline-block;
+                margin-left: 2vw;
+                color: $text;
+                text-shadow: 1px 1px 1px gray;
+                font-size: 3.2vw;
+                line-height: 1.5;
+                letter-spacing: 0.25em;
+                font-family: "Note Sans JP";
+                text-align: left;
+                .mission-text-2 {
+                    margin: 2vh 0;
+                }
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * mission ipad
+ * -------------------------------- */ 
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    #mission {
+        margin-bottom: 5vh;
+        .text-container {
+            display: block;
+            width: 80vw;
+            padding: 2vh 2vw;
+            margin: 0 auto;
+            text-align: center;
+            .mission-text {
+                display: inline-block;
+                margin-left: 2vw;
+                color: $text;
+                text-shadow: 1px 1px 1px gray;
+                font-size: 3.2vw;
+                line-height: 1.5;
+                letter-spacing: 0.25em;
+                font-family: "Note Sans JP";
+                text-align: left;
+                .mission-text-2 {
+                    margin: 2vh 0;
+                }
+            }
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * entry
+ * -------------------------------- */
+#entry {
+    .entry-text {
+        margin: 2vh 0;
+        color: $text;
+        font-size: 3vw;
+        text-align: center;
+    }
+    .entry-form {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* --------------------------------
+ * entry smart phone
+ * -------------------------------- */
+ @media screen and (max-width: 480px) {
+    #entry {
+        .entry-text {
+            margin: 0 0 2vh;
+            color: $text;
+            font-size: 5vw;
+            text-align: center;
+        }
+        .entry-form {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/*--------------------------------*/
+
+/* --------------------------------
+ * entry ipad
+ * -------------------------------- */ 
+ @media  screen and (max-width: 913px) and (min-width: 480px) {
+    #entry {
+        .entry-text {
+            margin: 0 0 2vh;
+            color: $text;
+            font-size: 5vw;
+            text-align: center;
+        }
+        .entry-form {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/*--------------------------------*/
+
+
+/* --------------------------------
+ * jQuery
+ * -------------------------------- */
+
+
+
+ .fadeRight{
+    animation-name: fadeRightAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwarda;
+    opacity: 1;
+}
+@keyframes fadeRightAnime{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeLeft{
+   animation-name: fadeLeftAnime;
+   animation-duration: 2s;
+   animation-fill-mode: forwarda;
+   opacity: 1;
+}
+@keyframes fadeLeftAnime{
+   from {
+       opacity: 0;
+       transform: translateX(-100px);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+.fadeIn{
+   animation-name: fadeInAnime;
+   animation-duration: 5s;
+   animation-fill-mode: forwarda;
+   opacity: 1;
+}
+@keyframes fadeInAnime{
+   from {
+       opacity: 0;
+       
+   }
+   to {
+       opacity: 1;
+   
+   }
+}
+.zoomIn {
+   animation-name: zoomInAnime;
+   animation-duration: 0.8s;
+   animation-fill-mode: forwards;
+}
+@keyframes zoomInAnime{
+   from {
+       transform: scale(1);
+   }
+   to {
+       transform: scale(1.5);
+   }
+}
+
+.zoomOut {
+   animation-name: zoomOutAnime;
+   animation-duration: 0.8s;
+   animation-fill-mode: forwards;
+}
+@keyframes zoomOutAnime{
+   from {
+       transform: scale(1.5);
+   }
+   to {
+       transform: scale(1);
+   }
+}
+
+.zoomIn2{
+   animation-name: zoomIn2Anime;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+
+}
+@keyframes zoomIn2Anime {
+   from{
+       transform: scale(1.5);
+   }
+   to{
+       transform: scale(2);
+       
+   }
+}
+
+.fadeUp2 {
+   animation-name: fadeUpAnime;
+   animation-duration: 0.5s;
+   animation-fill-mode: forwards;
+   
+}
+
+@keyframes fadeUpAnime {
+   from {
+       
+       transform: translateY(0);
+       opacity: 1;
+   }
+   to {
+       
+       transform: translateY(-100px);
+       opacity: 0.5;
+   }}
+
+
+   .slide-items {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-items img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .fadeIn-1{
+    animation-name: fadeInAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwarda;
+    opacity: 1;
+}
+@keyframes fadeInAnime{
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    
+    }
+}
+
+.fadeIn-2{
+    animation-name: fadeInAnime;
+    animation-duration: 10s;
+    animation-fill-mode: forwarda;
+    opacity: 1;
+}
+@keyframes fadeInAnime{
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    
+    }
+}
+
+.fadeIn-3{
+    animation-name: fadeInAnime;
+    animation-duration: 15s;
+    animation-fill-mode: forwarda;
+    opacity: 1;
+}
+@keyframes fadeInAnime{
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+    
+    }
+}
